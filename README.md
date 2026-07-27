@@ -108,8 +108,8 @@ ESP32-C3-Low-Power-IoT-Plant-Node
 - 📁 [Hardware](Hardware/)
 - 📁 [Docs](Docs/)
 - 📁 [Images](Images/)
-- 📁 [Custom Logos](Logos/)
-- 📁 [Custom Logos](3D Models/)
+- 📁 [Logos](Logos/)
+- 📁 [3D Models](3D%20Models/)
 
 ---
 
@@ -225,7 +225,7 @@ Planned additions
 
 ## Acknowledgements
 
-The 3D planter model used in the project renders was created by **Lewis**. Full credit goes to the original author. The original model is available on **Thingiverse** [Profile](https://www.thingiverse.com/thing:3537287).
+The 3D planter model used in the project renders was created by **Lewis**. Full credit goes to the original author. The original model is available on the **Thingiverse** [Profile](https://www.thingiverse.com/thing:3537287).
 
 The plant icon used on the PCB silkscreen is **"Smart Plant"** by **Anton Handal Saputra**, sourced from the **Noun Project**, and is used under the **Creative Commons Attribution 3.0 (CC BY 3.0)** license: https://thenounproject.com/browse/icons/term/smart-plant/
 
