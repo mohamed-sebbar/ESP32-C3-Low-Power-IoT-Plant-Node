@@ -1,0 +1,11 @@
+# KiCad
+*.lck
+*.kicad_prl
+
+# VS Code / History
+.history/
+
+# Temporary files
+*.bak
+*.tmp
+*.autosave
