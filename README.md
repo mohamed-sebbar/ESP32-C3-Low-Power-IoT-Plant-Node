@@ -4,14 +4,14 @@
 [![PCB](https://img.shields.io/badge/PCB-4--Layer-important)]()
 [![RF](https://img.shields.io/badge/2.4GHz-PCB%20Antenna-orange)]()
 
-# ESP32-C3 Low-Power IoT Plant Node
+# ESP32-C3 Low-Power IoT Plant Node Rev 2.0
 
 > Design and implementation of a compact low-power ESP32-C3 hardware platform for smart plant monitoring, environmental sensing and automated irrigation.
 
 ---
 
 <p align="center">
-<img src="Images/product_tilted_view_1.png" width="85%">
+<img src="Images/ESP32-C3_IoT_Node_Render_Collage_Rev2.0.png" width="85%">
 </p>
 
 ---
@@ -75,7 +75,8 @@ The goal of this repository is to document the engineering process behind the ha
 </p>
 
 <p align="center">
-<img src="Images/product_tilted_view_2.png" width="80%">
+<img src="Images/Front 2D Layer Composition.png" width="80%">
+<img src="Images/Back 2D Layer Composition.png" width="80%">
 </p>
 
 ---
@@ -94,6 +95,8 @@ ESP32-C3-Low-Power-IoT-Plant-Node
 │   ├── 01_Schematic.pdf
 │   └── 02_PCB_Assembly.pdf
 │
+├── LTspice_Sim
+│
 ├── Images/
 │
 ├── Logos/
@@ -107,6 +110,7 @@ ESP32-C3-Low-Power-IoT-Plant-Node
 
 - 📁 [Hardware](Hardware/)
 - 📁 [Docs](Docs/)
+- 📁 [LTspice_Sim](LTspice_Sim/)
 - 📁 [Images](Images/)
 - 📁 [Logos](Logos/)
 - 📁 [3D Models](3D%20Models/)
@@ -201,6 +205,7 @@ The repository documentation is being expanded and currently includes
 
 - Schematic
 - PCB Assembly
+- LTspice power rail stability and transient response plots
 
 Planned additions
 
@@ -215,8 +220,8 @@ Planned additions
 
 - Firmware adaptation
 - Antenna impedance tuning
-- Battery validation
-- Power consumption characterization
+- Battery validation [Done]
+- Power consumption characterization [Done]
 - Environmental testing
 - Long-term field deployment
 - Companion mobile application integration

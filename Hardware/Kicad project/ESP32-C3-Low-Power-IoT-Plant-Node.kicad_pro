@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.0,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -167,7 +167,7 @@
         "min_track_width": 0.1,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.2,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -266,7 +266,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "1.0"
+      "sch_revision": "2.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -537,6 +537,20 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "3V",
+        "pcb_color": "rgb(0, 255, 229)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 255, 229)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "5V",
+        "pcb_color": "rgb(255, 225, 0)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 225, 0)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -544,7 +558,16 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "5V",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "3V",
+        "pattern": "+3.3V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -552,6 +575,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -700,17 +724,29 @@
     "top_level_sheets": [
       {
         "filename": "ESP32-C3-Low-Power-IoT-Plant-Node.kicad_sch",
-        "name": "ESP32-C3-Low-Power-IoT-Plant-Node",
+        "name": "01_Top_Block_Diagram",
         "uuid": "027535d2-764e-473b-9698-30a2dbba7c1e"
       }
     ],
-    "used_designators": "R1-4,R6-19,J1-3,Q2-3,#FLG1-3,C1-21,U1-6,D2-3,AE1,SW1-2,Y1,#PWR1-39,ANT1,FB1,L1-2,H1",
+    "used_designators": "H1,J1-3,R1-19,#FLG1-5,Q1-3,C1-25,U1-8,D1-4,AE1,L1-2,SW1-2,ANT1,#PWR1-42,Y1,FB1,BT1,LDR1",
     "variants": []
   },
   "sheets": [
     [
       "027535d2-764e-473b-9698-30a2dbba7c1e",
-      "ESP32-C3-Low-Power-IoT-Plant-Node"
+      "01_Top_Block_Diagram"
+    ],
+    [
+      "47e82cb6-5f0e-4a49-95f3-cd74ae11c736",
+      "02_Power_Management"
+    ],
+    [
+      "ed8290aa-4c95-40fb-9764-29a76ea66802",
+      "03_MCU_Core_System"
+    ],
+    [
+      "5377f979-bee3-426e-b66f-dc57acc371a3",
+      "04_Peripherals_Sensors"
     ]
   ],
   "text_variables": {},
